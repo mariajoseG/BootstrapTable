@@ -6,7 +6,34 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
   
+  <audio id="vanadium">
+    <source src="vanadium.M4A" type="audio/mpeg">
+  </audio>
+
+  <script>
+    var x = document.getElementById("vanadium"); 
+    
+    function playAudioVanadium() { 
+      x.play(); 
+    } 
+ 
+  </script>
+
+  <audio id="niobium">
+    <source src="niobium.M4A" type="audio/mpeg">
+  </audio>
+
+<script>
+  var x = document.getElementById("niobium"); 
   
+  function playAudioNiobium() { 
+    x.play(); 
+  } 
+
+</script>
+
+
+
   <title>Page Title</title>
  </head>
  <body>
@@ -78,8 +105,8 @@
             <td>20<br>Ca<br>Calcium</td>
             <td>21<br>Sc<br>Scadium</td>
             <td>22<br>Ti<br>Titanium</td>
-            <td>23<br>V<br>Vanadium</td>
-            <td>24<br>Cr<br>Chromium</td>
+            <td><button onclick="playAudioVanadium()" type="button" class="btn btn-warning">23<br>V<br>Vanadium</button></td>
+            <td><button type="button" class="btn btn-danger">24<br>Cr<br>Chromium</button></td>
             <td>25<br>Mn<br>Manganese</td>
             <td>26<br>Fe<br>Iron</td>
             <td>27<br>Co<br>Cobalt</td>
@@ -99,8 +126,8 @@
           <td>38<br>Sr<br>Strontium</td>
           <td>39<br>Y<br>Yttrium</td>
           <td>40<br>Zr<br>Zirconium</td>
-          <td>41<br>Nb<br>Niobium</td>
-          <td>42<br>Mo<br>Molybdenur</td>
+          <td><button onclick="playAudioNiobium()" type="button" class="btn btn-warning">41<br>Nb<br>Niobium</button></td>
+          <td><button type="button" class="btn btn-danger">42<br>Mo<br>Molybdenur</button></td>
           <td>43<br>Tc<br>Technetium</td>
           <td>44<br>Ru<br>Ruthenium</td>
           <td>45<br>Rh<br>Rhodium</td>
@@ -119,8 +146,8 @@
           <td>56<br>Ba<br>Barium</td>
           <td><br>57-71<br></td>
           <td>72<br>Hf<br>Hafnium</td>
-          <td>73<br>Ta<br>Tantalum</td>
-          <td>74<br>W<br>Tungsten</td>
+          <td><button type="button" class="btn btn-warning">73<br>Ta<br>Tantalum</button></td>
+          <td><button type="button" class="btn btn-danger">74<br>W<br>Tungsten</button></td>
           <td>75<br>Re<br>Rhenium</td>
           <td>76<br>Os<br>Osmium</td>
           <td>77<br>Ir<br>Iridium</td>
@@ -139,8 +166,8 @@
           <td>88<br>Ra<br>Radium</td>
           <td><br>89-103<br></td>
           <td>104<br>Rf<br>Rutherfordium</td>
-          <td>105<br>Db<br>Dubnium</td>
-          <td>106<br>Sg<br>seaborgium</td>
+          <td><button type="button" class="btn btn-warning">105<br>Db<br>Dubnium</button></td>
+          <td><button type="button" class="btn btn-danger">106<br>Sg<br>seaborgium</button></td>
           <td>107<br>Bh<br>Bohrium</td>
           <td>108<br>Hs<br>Hassium</td>
           <td>109<br>Mt<br>Meitnerium</td>
